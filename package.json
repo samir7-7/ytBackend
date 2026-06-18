@@ -1,7 +1,7 @@
 {
-  "name": "chai-backend",
+  "name": "youtube-backend",
   "version": "1.0.0",
-  "description": "a backend at chai aur code channel - youtube",
+  "description": "A backend server for a YouTube-like application built with Node.js, Express, and MongoDB. It provides RESTful APIs for user authentication, video management, and other functionalities.",
   "type": "module",
   "main": "index.js",
   "scripts": {
