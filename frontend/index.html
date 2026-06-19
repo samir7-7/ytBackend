@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VidTube</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ TOP BAR ============ -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-left">
+      <button class="icon-btn" id="menu-toggle" title="Menu">&#9776;</button>
+      <a href="#/" class="brand">
+        <span class="brand-mark">&#9658;</span> VidTube
+      </a>
+    </div>
+
+    <form class="searchbar" id="search-form">
+      <input type="text" id="search-input" placeholder="Search videos" autocomplete="off" />
+      <button type="submit" class="search-btn" title="Search">&#128269;</button>
+    </form>
+
+    <div class="topbar-right" id="topbar-right">
+      <!-- filled by JS depending on auth state -->
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar" id="sidebar">
+      <nav id="side-nav"><!-- filled by JS --></nav>
+    </aside>
+
+    <!-- ============ MAIN VIEW ============ -->
+    <main class="content" id="view">
+      <!-- routed views render here -->
+    </main>
+  </div>
+
+  <!-- ============ TOAST ============ -->
+  <div id="toast" class="toast hidden"></div>
+
+  <!-- ============ MODAL ROOT ============ -->
+  <div id="modal-root" class="modal-overlay hidden">
+    <div class="modal" id="modal-box">
+      <div class="modal-head">
+        <h3 id="modal-title">Title</h3>
+        <button class="icon-btn" id="modal-close">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
